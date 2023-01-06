@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+    
+            const shoppingCart = [
+               { id: 1, name: "Apple", price: 2.50 },
+               { id: 2, name: "Pear", price: 3.00 },
+               { id: 3, name: "Banana", price: 4.50 }
+           ]
+           
+            let total = 0;
+            let totaltax = 0; 
+            shoppingCart.forEach( (item) => {
+               total += item.price
+               totaltax = total + (total *0.21)
+            })
+           
+            console.log(`Total: ${totaltax}`)  
+        </script>     
+    </head>
+</html>
