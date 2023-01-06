@@ -1,21 +1,15 @@
 <html>
   <head>
       <script>
+          sum = 0;
           for (let i = 0; i <= 100; i++) {
-        const modulus = i % 2
-          
-          const addtoTotal = (x) => {
-             
-             const addtoTotal = {
-                 x: i + i,
-             } 
-               
-             return(addtoTotal)
+            if (i % 2 == 0){
+              sum = sum + i;
             }
-        }
-        console.log(addtoTotal)
+          }    
+        console.log(`${sum}`);
       </script>
-  </head>
+    </head>
   <body>
   </body>
 </html>
